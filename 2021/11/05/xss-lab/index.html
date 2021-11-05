@@ -8,12 +8,12 @@
   <link rel="dns-prefetch" href="http://example.com">
   <title>xsslabs | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="xss-labs    level1     观察三处箭头，可以发现它是向服务器提交了一个name参数，值为“test”，从页面 回显来看，将neme参数的值显示在了页面上，并且显示了name参数值的字符长度 接下来，查看源码     他将name的参数值放到了之间 将name的参数重新赋值： alert(&#39;xss&#39;)     level2    与第一关相比，增加了“输入框”和“搜索” 使用第一">
+  <meta name="description" content="xss-labs    level1     观察三处箭头，可以发现它是向服务器提交了一个name参数，值为“test”，从页面 回显来看，将neme参数的值显示在了页面上，并且显示了name参数值的字符长度 接下来，查看源码     他将name的参数值放到了之间 将name的参数重新赋值：     level2    与第一关相比，增加了“输入框”和“搜索” 使用第一关的方法     发现不成">
 <meta property="og:type" content="article">
 <meta property="og:title" content="xsslabs">
 <meta property="og:url" content="http://example.com/2021/11/05/xss-lab/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="xss-labs    level1     观察三处箭头，可以发现它是向服务器提交了一个name参数，值为“test”，从页面 回显来看，将neme参数的值显示在了页面上，并且显示了name参数值的字符长度 接下来，查看源码     他将name的参数值放到了之间 将name的参数重新赋值： alert(&#39;xss&#39;)     level2    与第一关相比，增加了“输入框”和“搜索” 使用第一">
+<meta property="og:description" content="xss-labs    level1     观察三处箭头，可以发现它是向服务器提交了一个name参数，值为“test”，从页面 回显来看，将neme参数的值显示在了页面上，并且显示了name参数值的字符长度 接下来，查看源码     他将name的参数值放到了之间 将name的参数重新赋值：     level2    与第一关相比，增加了“输入框”和“搜索” 使用第一关的方法     发现不成">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/399da1dfbb5a440da4136a373c4a56d4.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_18,color_FFFFFF,t_70,g_se,x_16">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/2deff13d2d5d4155be81e1cd63f8aaeb.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16">
@@ -82,7 +82,7 @@
 <meta property="og:image" content="https://img-blog.csdnimg.cn/c5378dde51b44499a03857660d218555.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16">
 <meta property="og:image" content="https://img-blog.csdnimg.cn/bda2f6e51278490985549e1041809420.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16">
 <meta property="article:published_time" content="2021-11-05T11:21:06.000Z">
-<meta property="article:modified_time" content="2021-11-05T12:53:45.248Z">
+<meta property="article:modified_time" content="2021-11-05T13:17:09.063Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://img-blog.csdnimg.cn/399da1dfbb5a440da4136a373c4a56d4.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_18,color_FFFFFF,t_70,g_se,x_16">
@@ -260,7 +260,7 @@
 <p>接下来，查看源码</p>
 <p> <img src="https://img-blog.csdnimg.cn/2e433516d3e14b5085b48600b6be7698.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
 <p> 他将name的参数值放到了<h2></h2>之间</p>
-<p>将name的参数重新赋值：<script> alert('xss')</script></p>
+<p>将name的参数重新赋值：</p>
 <p> <img src="https://img-blog.csdnimg.cn/49a2c187041249f3801626e45cb497c9.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
 <p> level2</p>
 <p> <img src="https://img-blog.csdnimg.cn/0e21f7c582aa4aee9c637fbeb9c2608f.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
@@ -270,7 +270,7 @@
 <p> 发现不成功，查看网页源代码</p>
 <p> <img src="https://img-blog.csdnimg.cn/25b84c71bc3e4486baa3bb493c185263.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
 <p>可以看到在<h2> </h2>标签之中的恶意代码被编码了。其中&lt;和&gt;都被编码成了html字符实体。 </p>
-<p> 要想浏览器执行这里的弹窗代码，只需要将属性的引号和标签先闭合就可以了。将keyword的参数值重新赋值”&gt;<script>alert('xss')</script>//</p>
+<p> 要想浏览器执行这里的弹窗代码，只需要将属性的引号和标签先闭合就可以了。将keyword的参数值重新赋值”&gt;</p>
 <p> <img src="https://img-blog.csdnimg.cn/1f68de5f2311484d9d4a4c83cb989f09.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
 <p> 左边的”&gt;去闭合原先的”<br>右边的//去注释原先的”&gt;</p>
 <p>level3</p>
@@ -283,7 +283,7 @@
 <p>查看level3.php的代码</p>
 <p> <img src="https://img-blog.csdnimg.cn/2fd127840b93496dbaf94705d02a9f4e.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
 <p> 发现这两处都使用了htmlspecialchars()函数进行了处理。</p>
-<p>构造代码：level3.php?keyword=’onfocus=javascript:alert(‘xss’) &gt; //&amp;submit=搜索 </p>
+<p>构造代码：</p>
 <p>  <img src="https://img-blog.csdnimg.cn/dcbbbc5c7398485ea053f06860f62805.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
 <p>发现没有直接弹窗，这是因为onfocus事件的特殊性造成的 </p>
 <p>onfocus 事件在对象获得焦点时发生。</p>
@@ -302,7 +302,7 @@
 <p>箭头1处直接将&lt;和&gt;编码转换了</p>
 <p>箭头2处却是把&lt;和&gt;删除了</p>
 <p>但是，事件触发却不需要使用这两个符号。</p>
-<p>用上一关的代码：level4.php?keyword=”onfocus=javascript:alert(‘xss’)”</p>
+<p>用上一关的代码：</p>
 <p> <img src="https://img-blog.csdnimg.cn/350bfa9aa9344a71824aacb4b4451258.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
 <p>level5</p>
 <p> <img src="https://img-blog.csdnimg.cn/23033ef2ce824ebba1b2e00b5972d06a.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
@@ -312,7 +312,7 @@
 <p> <img src="https://img-blog.csdnimg.cn/f3a6abf40efc4ce6bb38d909d259f9e6.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
 <p>箭头1处：应该是被htmlspecialchars()函数将&lt;和&gt;进行了编码处理</p>
 <p>箭头2处：在显示位可以看到，它在我们的恶意代码<script>中添加了一个_符号</p>
-<p> 用之前事件触发的代码进行测试：?keyword=”onfocus=javascript:alert(‘xss’)”</p>
+<p> 用之前事件触发的代码进行测试：</p>
 <p> <img src="https://img-blog.csdnimg.cn/7a71fcdb78184af0aab15cbbc86898b4.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
 <p>没有成功弹出提示框</p>
 <p>查看网页源代码</p>
@@ -320,24 +320,24 @@
 <p> 这里对onfocus这一类的事件字符也进行了防范</p>
 <p>所以此处既然无法通过<script>标签或触发事件来执行js代码的话，那么可以换一个标</p>
 <p>签来执行js代码。</p>
-<p>继续构造如下代码：?keyword=”&gt; &lt;a href=javascript:alert(‘xss’) &gt; xss</a> //</p>
+<p>继续构造如下代码：</p>
 <p> <img src="https://img-blog.csdnimg.cn/0a7c6cb9d68d42b7941c849c24e06410.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
 <p>从页面回显可以看到一个xss的链接</p>
 <p>点击链接即可触发弹窗的js代码</p>
 <p> <img src="https://img-blog.csdnimg.cn/435a554ae93d430da5877f170a399396.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
 <p> level6</p>
 <p> <img src="https://img-blog.csdnimg.cn/7bbf5dfaae2249028aa95ec64b7632a0.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
-<p> 尝试搜索恶意代码<script>alert(‘xss’)</script></p>
+<p> 尝试搜索恶意代码</p>
 <p>  <img src="https://img-blog.csdnimg.cn/f5938647f41942499af0cc99ba024a2c.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
 <p> 查看网页源代码</p>
 <p> <img src="https://img-blog.csdnimg.cn/dbbbc88933154ad98e937d1de394e029.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
 <p>上面则还是&lt;和&gt;被编码了</p>
 <p>下面则是在script字符中插入_破坏语义。</p>
-<p>尝试上一关中的方法?keyword=”&gt; &lt;a href=javascript:alert(‘xss’) &gt; xss</a> //</p>
+<p>尝试上一关中的方法</p>
 <p> <img src="https://img-blog.csdnimg.cn/f96cf2fae1b349cfb790feec1c9fafce.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
 <p> 发现还是不行，查看代码也是一样的原因</p>
 <p>我们可以试试大小写混写来尝试能不能绕过</p>
-<p>还是标签：?keyword=”&gt; &lt;a HrEf=javascript:alert(‘xss’) &gt; xss</a> //</p>
+<p>还是标签：</p>
 <p> <img src="https://img-blog.csdnimg.cn/08b8efff44b14f51a8abdf1d7c71d3bf.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
 <p> <img src="https://img-blog.csdnimg.cn/dc101acf434b4e95a0465efd4191dee6.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
 <p>同样还是点击了页面回显的xss链接</p>
@@ -349,7 +349,7 @@
 <p> <img src="https://img-blog.csdnimg.cn/e9e4ddbb32f348dda79cffd973e82054.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
 <p>箭头1：将&lt;和&gt;进行编码处理了</p>
 <p>箭头2：把script字符直接删除了</p>
-<p> 再试试事件触发：?keyword=”onfocus=javascript:alert(‘xss’)//</p>
+<p> 再试试事件触发：</p>
 <p> <img src="https://img-blog.csdnimg.cn/3a2fd2e29383429b8c8ca32beb277a01.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
 <p> 可以看到onfocus事件直接把on字符删除了，javascript中的script字符也被删除了。尝试大小写也不对，尝试双写关键字</p>
 <p> <img src="https://img-blog.csdnimg.cn/144ab0bf552440abac75ea8e4005ed3d.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
@@ -357,11 +357,11 @@
 <p> <img src="https://img-blog.csdnimg.cn/d7a0347ee77f4652874333eecb5882a4.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
 <p> 提交的参数值一个会插入到<input>标签的value属性值中，</p>
 <p>一个会插入到下方<a>标签的href属性值中。</p>
-<p>输入<script>alert('xss')</script></p>
+<p>输入</p>
 <p> <img src="https://img-blog.csdnimg.cn/3032b5b18a0143b1bd8a9578e1626845.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
 <p>&lt;和&gt;被编码了</p>
 <p>在href属性值中script字符被插入了_字符破坏语义</p>
-<p>事件触发测试：?keyword=” οnfοcus=javascript:alert(‘xss’)&gt;//&amp;submit=添加友情链接</p>
+<p>事件触发测试：</p>
 <p> <img src="https://img-blog.csdnimg.cn/b3620d0a06cb4cc3b8ec875941e6c9f0.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
 <p>用来闭合引号的引号也被编码了。</p>
 <p>onfocus一类的事件也被破坏了</p>
@@ -377,7 +377,7 @@
 <p>而是显示的 “您的链接不合法？有没有！”这样的字符串。</p>
 <p>猜测这里可能对url地址做了匹配。</p>
 <p>只有包含正常的url地址才能添加到href属性值中</p>
-<p>构造一个有正常url地址的恶意代码：?keyword=javascript:alert(‘xss’)<a target="_blank" rel="noopener" href="http://www.baidu.com/">http://www.baidu.com</a></p>
+<p>构造一个有正常url地址的恶意代码：h</p>
 <p> <img src="https://img-blog.csdnimg.cn/b84e5235918e40f798d9883c06831687.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
 <p> 语句虽然显示在了href属性值中，但是javascript字符被插入了_</p>
 <p>尝试大小写绕过</p>
@@ -385,18 +385,18 @@
 <p>那么尝试对关键字进行编码</p>
 <p><a target="_blank" rel="noopener" href="http://www.baidu.com之间需要插入//%EF%BC%8C%E5%90%A6%E5%88%99%E4%B8%8D%E4%BC%9A%E6%88%90%E5%8A%9F%E6%89%A7%E8%A1%8C%E5%BC%B9%E7%AA%97%E3%80%82">http://www.baidu.com之间需要插入//，否则不会成功执行弹窗。</a></p>
 <p> <img src="https://img-blog.csdnimg.cn/cebd9d9f4094469890da71ac0a5b3bb8.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_19,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
-<p> level10<br>尝试输入<script>alert('xss')</script></p>
+<p> level10<br>尝试输入</p>
 <p>查看网页源代码</p>
 <p> <img src="https://img-blog.csdnimg.cn/e3a1457fa4aa4a32b99e8c99a65b07d8.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
 <p>这里有三个<input>标签的话，也就意味着是三个参数</p>
 <p>看看哪一个标签能够被突破</p>
-<p>构造语句?keyword=<script>alert('xss')</script>&amp;t_link=” type=”text”&amp;t_history=” type=”text”&amp;t_sort=” type=”text”</p>
+<p>构造语句</p>
 <p> <img src="https://img-blog.csdnimg.cn/abcec929937743f7a581c605003da961.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
 <p>从页面响应来看，有一个<input>标签的状态可以被改变。这个标签就是名</p>
 <p>为t_sort的<input>标签，之前都是隐藏状态，但是通过构造参数响应发现只</p>
 <p>有它里面的值被改变了。</p>
 <p>因此可以从该标签进行突破，尝试能不能注入恶意代码进行弹窗。</p>
-<p>构造如下代码：?keyword=<script>alert('xss')</script>&amp;t_sort=” type=”text” οnclick=”alert(‘xss’)</p>
+<p>构造如下代码：</p>
 <p>  <img src="https://img-blog.csdnimg.cn/6f3e94241a9e4166bc24f460f05b00da.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
 <p>level11<br>查看网页源代码</p>
 <p> <img src="https://img-blog.csdnimg.cn/f82b4346394246d7ae2148b959668eef.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
@@ -783,7 +783,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">小本科一枚&lt;br&gt;&lt;br&gt;毕业于沈航，就职于苏宁&lt;br&gt;只是一个前端小开发</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">本科&lt;br&gt;&lt;br&gt;中北大学&lt;br&gt;网络安全</div>
   	  	
     	</section>
     
