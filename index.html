@@ -218,7 +218,7 @@
 <p>  <img src="https://img-blog.csdnimg.cn/dcbbbc5c7398485ea053f06860f62805.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
 <p>发现没有直接弹窗，这是因为onfocus事件的特殊性造成的 </p>
 <p>onfocus 事件在对象获得焦点时发生。</p>
-<p>onfocus 通常用于 <input>, <select>, 和<a>.</p>
+<p>onfocus 通常用于 &lt; input&gt;, &lt; select&gt;, 和&lt; a&gt;.</p>
 <p>最简单的实例就是网页上的一个输入框,当使用鼠标点击该输入框时输入框被选中可以</p>
 <p>输入内容的时候就是该输入框获得焦点的时候,此时输入框就会触发onfocus事件.因此</p>
 <p>点击当前页面的输入框就可以完成弹框了。</p>
@@ -242,14 +242,14 @@
 <p>报错，查看网页源代码</p>
 <p> <img src="https://img-blog.csdnimg.cn/f3a6abf40efc4ce6bb38d909d259f9e6.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
 <p>箭头1处：应该是被htmlspecialchars()函数将&lt;和&gt;进行了编码处理</p>
-<p>箭头2处：在显示位可以看到，它在我们的恶意代码<script>中添加了一个_符号</p>
+<p>箭头2处：在显示位可以看到，它在我们的恶意代码&lt; script&gt;中添加了一个_符号</p>
 <p> 用之前事件触发的代码进行测试：</p>
 <p> <img src="https://img-blog.csdnimg.cn/7a71fcdb78184af0aab15cbbc86898b4.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
 <p>没有成功弹出提示框</p>
 <p>查看网页源代码</p>
 <p> <img src="https://img-blog.csdnimg.cn/02732d0312934e559ac2c2d3960bbfee.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
 <p> 这里对onfocus这一类的事件字符也进行了防范</p>
-<p>所以此处既然无法通过<script>标签或触发事件来执行js代码的话，那么可以换一个标</p>
+<p>所以此处既然无法通过&lt; script&gt;标签或触发事件来执行js代码的话，那么可以换一个标</p>
 <p>签来执行js代码。</p>
 <p>继续构造如下代码：</p>
 <p> <img src="https://img-blog.csdnimg.cn/0a7c6cb9d68d42b7941c849c24e06410.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
@@ -272,7 +272,7 @@
 <p> <img src="https://img-blog.csdnimg.cn/08b8efff44b14f51a8abdf1d7c71d3bf.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
 <p> <img src="https://img-blog.csdnimg.cn/dc101acf434b4e95a0465efd4191dee6.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
 <p>同样还是点击了页面回显的xss链接</p>
-<p>我们这里改动的是<a>标签中的href属性的大小写，而在html中对大小写是</p>
+<p>我们这里改动的是&lt; a&gt;标签中的href属性的大小写，而在html中对大小写是</p>
 <p>不敏感的。</p>
 <p>level7</p>
 <p> <img src="https://img-blog.csdnimg.cn/917ae92881974817bb3b6eb2d710cb03.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_13,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
@@ -286,8 +286,8 @@
 <p> <img src="https://img-blog.csdnimg.cn/144ab0bf552440abac75ea8e4005ed3d.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
 <p> level8<br>用test测试，查看源码</p>
 <p> <img src="https://img-blog.csdnimg.cn/d7a0347ee77f4652874333eecb5882a4.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
-<p> 提交的参数值一个会插入到<input>标签的value属性值中，</p>
-<p>一个会插入到下方<a>标签的href属性值中。</p>
+<p> 提交的参数值一个会插入到&lt; input&gt;标签的value属性值中，</p>
+<p>一个会插入到下方&lt; a&gt;标签的href属性值中。</p>
 <p>输入</p>
 <p> <img src="https://img-blog.csdnimg.cn/3032b5b18a0143b1bd8a9578e1626845.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
 <p>&lt;和&gt;被编码了</p>
@@ -304,7 +304,7 @@
 <p>level9</p>
 <p> <img src="https://img-blog.csdnimg.cn/876e18a4a3c541be81ea0d90b3412141.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
 <p>提交的参数值插入到了标签的value属性值中</p>
-<p>但是在<a>标签的href属性中却并没有出现该参数值，</p>
+<p>但是在&lt; a&gt;标签的href属性中却并没有出现该参数值，</p>
 <p>而是显示的 “您的链接不合法？有没有！”这样的字符串。</p>
 <p>猜测这里可能对url地址做了匹配。</p>
 <p>只有包含正常的url地址才能添加到href属性值中</p>
@@ -319,12 +319,12 @@
 <p> level10<br>尝试输入</p>
 <p>查看网页源代码</p>
 <p> <img src="https://img-blog.csdnimg.cn/e3a1457fa4aa4a32b99e8c99a65b07d8.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
-<p>这里有三个<input>标签的话，也就意味着是三个参数</p>
+<p>这里有三个&lt; input&gt;标签的话，也就意味着是三个参数</p>
 <p>看看哪一个标签能够被突破</p>
 <p>构造语句</p>
 <p> <img src="https://img-blog.csdnimg.cn/abcec929937743f7a581c605003da961.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
-<p>从页面响应来看，有一个<input>标签的状态可以被改变。这个标签就是名</p>
-<p>为t_sort的<input>标签，之前都是隐藏状态，但是通过构造参数响应发现只</p>
+<p>从页面响应来看，有一个&lt; input&gt;标签的状态可以被改变。这个标签就是名</p>
+<p>为t_sort的&lt; input&gt;标签，之前都是隐藏状态，但是通过构造参数响应发现只</p>
 <p>有它里面的值被改变了。</p>
 <p>因此可以从该标签进行突破，尝试能不能注入恶意代码进行弹窗。</p>
 <p>构造如下代码：</p>
@@ -332,7 +332,7 @@
 <p>level11<br>查看网页源代码</p>
 <p> <img src="https://img-blog.csdnimg.cn/f82b4346394246d7ae2148b959668eef.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
 <p>可以看到如同第十关一样有隐藏的表单</p>
-<p>不同的是多了一个名为t_ref的<input>标签。</p>
+<p>不同的是多了一个名为t_ref的&lt; input&gt;标签。</p>
 <p>尝试用上一关的方法看看能不能从这几个标签进行突破注入代码。</p>
 <p>构造代码：?keyword=good job!&amp;t_link=”type=”text&amp;t_history=”type=”text&amp;t_sort=”type=”text&amp;t_ref=”type=”text</p>
 <p> <img src="https://img-blog.csdnimg.cn/10df439d717047f3be894c67c7970af4.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_15,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
@@ -394,13 +394,13 @@
 <p>这样也没办法去闭合前面的标签了。</p>
 <p>可以用回车来将它们分开。</p>
 <p>而且这里/符号也被编码了，所以我们需要的是一个不需要闭合的标签，比</p>
-<p>如之前所用过的<img></p>
+<p>如之前所用过的&lt; img&gt;</p>
 <p>构造的语句为level16.php?keyword=%3Cimg%0Dsrc=x%0Donerror=alert(%27XSS%27)%3E</p>
 <p>，使用了%0d代替空格，%0d是十六进制的回车，成功弹框，进入下一关</p>
 <p> <img src="https://img-blog.csdnimg.cn/1325cfe37dc5422796e2f0c889def50a.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
 <p> level17<br>查看网页源代码</p>
 <p> <img src="https://img-blog.csdnimg.cn/c5378dde51b44499a03857660d218555.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
-<p>我们提交的两个参数的值出现在了<embed>标签的src属性值中</p>
+<p>我们提交的两个参数的值出现在了&lt; embed&gt;标签的src属性值中</p>
 <p>猜测该标签应该就是突破口，然后用基本的弹窗代码测试</p>
 <p> <img src="https://img-blog.csdnimg.cn/bda2f6e51278490985549e1041809420.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
 <p>直接修改源码中该超链接 a 标签中的 href 为：javascript:alert(1)，点击成功绕过</p>
