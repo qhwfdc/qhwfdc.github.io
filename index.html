@@ -12,11 +12,9 @@
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://example.com/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
+<meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-  
-    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
   
     <link rel="icon" href="/favicon.png">
@@ -42,11 +40,11 @@
 <div class="overlay" style="background: #4d4d4d"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
-		<a href="/" class="profilepic">
+		<a href="" class="profilepic">
 			<img src="" class="js-avatar">
 		</a>
 		<hgroup>
-		  <h1 class="header-author"><a href="/"></a></h1>
+		  <h1 class="header-author"><a href=""></a></h1>
 		</hgroup>
 		
 
@@ -55,7 +53,11 @@
 			
 				<li><a href="/">主页</a></li>
 	        
-				<li><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+				<li><a href="/allPages">所有文章</a></li>
+	        
+				<li><a href="/tags">随笔</a></li>
+	        
+				<li><a href="/photos">相册</a></li>
 	        
 			</ul>
 		</nav>
@@ -77,11 +79,11 @@
 		<nav class="header-nav">
 			<div class="social">
 				
-					<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+					<a class="github" target="_blank" href="https://github.com/saucxs" title="github"><i class="icon-github"></i></a>
 		        
 					<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
 		        
-					<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
+					<a class="rss" target="_blank" href="/atom.xml" title="rss"><i class="icon-rss"></i></a>
 		        
 					<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
 		        
@@ -113,16 +115,20 @@
 			
 				
 			
+				
+			
+				
+			
 			
 			
 			<nav class="header-nav">
 				<div class="social">
 					
-						<a class="github" target="_blank" href="#" title="github"><i class="icon-github"></i></a>
+						<a class="github" target="_blank" href="https://github.com/saucxs" title="github"><i class="icon-github"></i></a>
 			        
 						<a class="weibo" target="_blank" href="#" title="weibo"><i class="icon-weibo"></i></a>
 			        
-						<a class="rss" target="_blank" href="#" title="rss"><i class="icon-rss"></i></a>
+						<a class="rss" target="_blank" href="/atom.xml" title="rss"><i class="icon-rss"></i></a>
 			        
 						<a class="zhihu" target="_blank" href="#" title="zhihu"><i class="icon-zhihu"></i></a>
 			        
@@ -130,12 +136,16 @@
 			</nav>
 
 			<nav class="header-menu js-header-menu">
-				<ul style="width: 50%">
+				<ul style="width: 70%">
 				
 				
-					<li style="width: 50%"><a href="/">主页</a></li>
+					<li style="width: 25%"><a href="/">主页</a></li>
 		        
-					<li style="width: 50%"><a href="/tags/%E9%9A%8F%E7%AC%94/">随笔</a></li>
+					<li style="width: 25%"><a href="/allPages">所有文章</a></li>
+		        
+					<li style="width: 25%"><a href="/tags">随笔</a></li>
+		        
+					<li style="width: 25%"><a href="/photos">相册</a></li>
 		        
 				</ul>
 			</nav>
@@ -152,19 +162,19 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-xss-labs" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-xss-lab" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2021/11/05/xss-labs/">xsslabs</a>
+      <a class="article-title" href="/2021/11/05/xss-lab/">xsslabs</a>
     </h1>
   
 
         
-        <a href="/2021/11/05/xss-labs/" class="archive-article-date">
+        <a href="/2021/11/05/xss-lab/" class="archive-article-date">
   	<time datetime="2021-11-05T11:21:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-11-05</time>
 </a>
         
@@ -172,7 +182,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Ŀ¼</p>
+        <p>目录</p>
 <p>level1</p>
 <p> level2</p>
 <p>level3</p>
@@ -192,161 +202,161 @@
 <p> level17</p>
 <p>xss-labs</p>
 <p>level1</p>
-<p> �۲�������ͷ�����Է���������������ύ��һ��name������ֵΪ��test������ҳ��</p>
-<p>������������neme������ֵ��ʾ����ҳ���ϣ�������ʾ��name����ֵ���ַ�����</p>
-<p>���������鿴Դ��</p>
-<p> ����name�Ĳ���ֵ�ŵ���<h2></h2>֮��</p>
-<p>��name�Ĳ������¸�ֵ��<script> alert('xss')</script></p>
+<p> 观察三处箭头，可以发现它是向服务器提交了一个name参数，值为“test”，从页面</p>
+<p>回显来看，将neme参数的值显示在了页面上，并且显示了name参数值的字符长度</p>
+<p>接下来，查看源码</p>
+<p> 他将name的参数值放到了<h2></h2>之间</p>
+<p>将name的参数重新赋值：<script> alert('xss')</script></p>
 <p> level2</p>
-<p>���һ����ȣ������ˡ�����򡱺͡�������</p>
-<p>ʹ�õ�һ�صķ���</p>
-<p> ���ֲ��ɹ����鿴��ҳԴ����</p>
-<p>���Կ�����<h2> </h2>��ǩ֮�еĶ�����뱻�����ˡ�����&lt;��&gt;�����������html�ַ�ʵ�塣 </p>
-<p> Ҫ�������ִ������ĵ������룬ֻ��Ҫ�����Ե����źͱ�ǩ�ȱպϾͿ����ˡ���keyword�Ĳ���ֵ���¸�ֵ”&gt;<script>alert('xss')</script>//</p>
-<p> ��ߵ�”&gt;ȥ�պ�ԭ�ȵ�”<br>�ұߵ�//ȥע��ԭ�ȵ�”&gt;</p>
+<p>与第一关相比，增加了“输入框”和“搜索”</p>
+<p>使用第一关的方法</p>
+<p> 发现不成功，查看网页源代码</p>
+<p>可以看到在<h2> </h2>标签之中的恶意代码被编码了。其中&lt;和&gt;都被编码成了html字符实体。 </p>
+<p> 要想浏览器执行这里的弹窗代码，只需要将属性的引号和标签先闭合就可以了。将keyword的参数值重新赋值”&gt;<script>alert('xss')</script>//</p>
+<p> 左边的”&gt;去闭合原先的”<br>右边的//去注释原先的”&gt;</p>
 <p>level3</p>
-<p> �������쵯��</p>
-<p> �����ˣ��鿴��ҳ����</p>
-<p> ��ͷ��ָ����������&lt;&gt;�ַ��������html�ַ�ʵ��</p>
-<p>�鿴level3.php�Ĵ���</p>
-<p> ������������ʹ����htmlspecialchars()���������˴�����</p>
-<p>������룺level3.php?keyword=’onfocus=javascript:alert(‘xss’) &gt; //&amp;submit=���� </p>
-<p>����û��ֱ�ӵ�����������Ϊonfocus�¼�����������ɵ� </p>
-<p>onfocus �¼��ڶ����ý���ʱ������</p>
-<p>onfocus ͨ������ <input>, <select>, ��<a>.</p>
-<p>��򵥵�ʵ��������ҳ�ϵ�һ�������,��ʹ��������������ʱ�����ѡ�п���</p>
-<p>�������ݵ�ʱ����Ǹ�������ý����ʱ��,��ʱ�����ͻᴥ��onfocus�¼�.���</p>
-<p>�����ǰҳ��������Ϳ�����ɵ����ˡ�</p>
+<p> 尝试制造弹窗</p>
+<p> 报错了，查看网页代码</p>
+<p> 箭头所指的两处都将&lt;&gt;字符编码成了html字符实体</p>
+<p>查看level3.php的代码</p>
+<p> 发现这两处都使用了htmlspecialchars()函数进行了处理。</p>
+<p>构造代码：level3.php?keyword=’onfocus=javascript:alert(‘xss’) &gt; //&amp;submit=搜索 </p>
+<p>发现没有直接弹窗，这是因为onfocus事件的特殊性造成的 </p>
+<p>onfocus 事件在对象获得焦点时发生。</p>
+<p>onfocus 通常用于 <input>, <select>, 和<a>.</p>
+<p>最简单的实例就是网页上的一个输入框,当使用鼠标点击该输入框时输入框被选中可以</p>
+<p>输入内容的时候就是该输入框获得焦点的时候,此时输入框就会触发onfocus事件.因此</p>
+<p>点击当前页面的输入框就可以完成弹框了。</p>
 <p>level4 </p>
-<p>�ϵ����������һ��</p>
-<p> ��������������ύ�Ĳ���ֵ�г��룬&lt;��&gt;û����</p>
-<p>�鿴��ҳԴ����</p>
-<p>��ͷ1��ֱ�ӽ�&lt;��&gt;����ת����</p>
-<p>��ͷ2��ȴ�ǰ�&lt;��&gt;ɾ����</p>
-<p>���ǣ��¼�����ȴ����Ҫʹ�����������š�</p>
-<p>����һ�صĴ��룺level4.php?keyword=”onfocus=javascript:alert(‘xss’)”</p>
+<p>上弹窗代码测试一下</p>
+<p> 输入框中与我们提交的参数值有出入，&lt;和&gt;没有了</p>
+<p>查看网页源代码</p>
+<p>箭头1处直接将&lt;和&gt;编码转换了</p>
+<p>箭头2处却是把&lt;和&gt;删除了</p>
+<p>但是，事件触发却不需要使用这两个符号。</p>
+<p>用上一关的代码：level4.php?keyword=”onfocus=javascript:alert(‘xss’)”</p>
 <p>level5</p>
-<p>�����������</p>
-<p>�������鿴��ҳԴ����</p>
-<p>��ͷ1����Ӧ���Ǳ�htmlspecialchars()������&lt;��&gt;�����˱��봦��</p>
-<p>��ͷ2��������ʾλ���Կ������������ǵĶ������<script>��������һ��_����</p>
-<p> ��֮ǰ�¼������Ĵ�����в��ԣ�?keyword=”onfocus=javascript:alert(‘xss’)”</p>
-<p>û�гɹ�������ʾ��</p>
-<p>�鿴��ҳԴ����</p>
-<p> �����onfocus��һ����¼��ַ�Ҳ�����˷���</p>
-<p>���Դ˴���Ȼ�޷�ͨ��<script>��ǩ�򴥷��¼���ִ��js����Ļ�����ô���Ի�һ����</p>
-<p>ǩ��ִ��js���롣</p>
-<p>�����������´��룺?keyword=”&gt; &lt;a href=javascript:alert(‘xss’) &gt; xss</a> //</p>
-<p>��ҳ����Կ��Կ���һ��xss������</p>
-<p>������Ӽ��ɴ���������js����</p>
+<p>弹窗代码测试</p>
+<p>报错，查看网页源代码</p>
+<p>箭头1处：应该是被htmlspecialchars()函数将&lt;和&gt;进行了编码处理</p>
+<p>箭头2处：在显示位可以看到，它在我们的恶意代码<script>中添加了一个_符号</p>
+<p> 用之前事件触发的代码进行测试：?keyword=”onfocus=javascript:alert(‘xss’)”</p>
+<p>没有成功弹出提示框</p>
+<p>查看网页源代码</p>
+<p> 这里对onfocus这一类的事件字符也进行了防范</p>
+<p>所以此处既然无法通过<script>标签或触发事件来执行js代码的话，那么可以换一个标</p>
+<p>签来执行js代码。</p>
+<p>继续构造如下代码：?keyword=”&gt; &lt;a href=javascript:alert(‘xss’) &gt; xss</a> //</p>
+<p>从页面回显可以看到一个xss的链接</p>
+<p>点击链接即可触发弹窗的js代码</p>
 <p> level6</p>
-<p> ���������������<script>alert(��xss��)</script></p>
-<p> �鿴��ҳԴ����</p>
-<p>��������&lt;��&gt;��������</p>
-<p>����������script�ַ��в���_�ƻ����塣</p>
-<p>������һ���еķ���?keyword=”&gt; &lt;a href=javascript:alert(‘xss’) &gt; xss</a> //</p>
-<p> ���ֻ��ǲ��У��鿴����Ҳ��һ����ԭ��</p>
-<p>���ǿ������Դ�Сд��д�������ܲ����ƹ�</p>
-<p>���Ǳ�ǩ��?keyword=”&gt; &lt;a HrEf=javascript:alert(‘xss’) &gt; xss</a> //</p>
-<p>ͬ�����ǵ����ҳ����Ե�xss����</p>
-<p>��������Ķ�����<a>��ǩ�е�href���ԵĴ�Сд������html�жԴ�Сд��</p>
-<p>�����еġ�</p>
+<p> 尝试搜索恶意代码<script>alert(‘xss’)</script></p>
+<p> 查看网页源代码</p>
+<p>上面则还是&lt;和&gt;被编码了</p>
+<p>下面则是在script字符中插入_破坏语义。</p>
+<p>尝试上一关中的方法?keyword=”&gt; &lt;a href=javascript:alert(‘xss’) &gt; xss</a> //</p>
+<p> 发现还是不行，查看代码也是一样的原因</p>
+<p>我们可以试试大小写混写来尝试能不能绕过</p>
+<p>还是标签：?keyword=”&gt; &lt;a HrEf=javascript:alert(‘xss’) &gt; xss</a> //</p>
+<p>同样还是点击了页面回显的xss链接</p>
+<p>我们这里改动的是<a>标签中的href属性的大小写，而在html中对大小写是</p>
+<p>不敏感的。</p>
 <p>level7</p>
-<p>���������룬�鿴��ҳԴ����</p>
-<p>��ͷ1����&lt;��&gt;���б��봦����</p>
-<p>��ͷ2����script�ַ�ֱ��ɾ����</p>
-<p> �������¼�������?keyword=”onfocus=javascript:alert(‘xss’)//</p>
-<p> ���Կ���onfocus�¼�ֱ�Ӱ�on�ַ�ɾ���ˣ�javascript�е�script�ַ�Ҳ��ɾ���ˡ����Դ�СдҲ���ԣ�����˫д�ؼ���</p>
-<p> level8<br>��test���ԣ��鿴Դ��</p>
-<p> �ύ�Ĳ���ֵһ������뵽<input>��ǩ��value����ֵ�У�</p>
-<p>һ������뵽�·�<a>��ǩ��href����ֵ�С�</p>
-<p>����<script>alert('xss')</script></p>
-<p>&lt;��&gt;��������</p>
-<p>��href����ֵ��script�ַ���������_�ַ��ƻ�����</p>
-<p>�¼��������ԣ�?keyword=” ��nf��cus=javascript:alert(‘xss’)&gt;//&amp;submit=������������</p>
-<p>�����պ����ŵ�����Ҳ�������ˡ�</p>
-<p>onfocusһ����¼�Ҳ���ƻ���</p>
-<p>��Сд�ƹ���ʧ����</p>
-<p>��Ϊ�˴�û�жԹؼ��ֽ���ɾ�������ԾͲ�����˫д������</p>
-<p>��ʵ�����Խ�����Ҫ�ύ��js������б���</p>
+<p>输入恶意代码，查看网页源代码</p>
+<p>箭头1：将&lt;和&gt;进行编码处理了</p>
+<p>箭头2：把script字符直接删除了</p>
+<p> 再试试事件触发：?keyword=”onfocus=javascript:alert(‘xss’)//</p>
+<p> 可以看到onfocus事件直接把on字符删除了，javascript中的script字符也被删除了。尝试大小写也不对，尝试双写关键字</p>
+<p> level8<br>用test测试，查看源码</p>
+<p> 提交的参数值一个会插入到<input>标签的value属性值中，</p>
+<p>一个会插入到下方<a>标签的href属性值中。</p>
+<p>输入<script>alert('xss')</script></p>
+<p>&lt;和&gt;被编码了</p>
+<p>在href属性值中script字符被插入了_字符破坏语义</p>
+<p>事件触发测试：?keyword=” οnfοcus=javascript:alert(‘xss’)&gt;//&amp;submit=添加友情链接</p>
+<p>用来闭合引号的引号也被编码了。</p>
+<p>onfocus一类的事件也被破坏了</p>
+<p>大小写绕过，失败了</p>
+<p>因为此处没有对关键字进行删除，所以就不进行双写测试了</p>
+<p>其实还可以将我们要提交的js代码进行编码</p>
 <p>level9</p>
-<p>�ύ�Ĳ���ֵ���뵽�˱�ǩ��value����ֵ��</p>
-<p>������<a>��ǩ��href������ȴ��û�г��ָò���ֵ��</p>
-<p>������ʾ�� “�������Ӳ��Ϸ�����û�У�”�������ַ�����</p>
-<p>�²�������ܶ�url��ַ����ƥ�䡣</p>
-<p>ֻ�а���������url��ַ�������ӵ�href����ֵ��</p>
-<p>����һ��������url��ַ�Ķ�����룺?keyword=javascript:alert(‘xss’)<a target="_blank" rel="noopener" href="http://www.baidu.com/">http://www.baidu.com</a></p>
-<p> �����Ȼ��ʾ����href����ֵ�У�����javascript�ַ���������_</p>
-<p>���Դ�Сд�ƹ�</p>
-<p>Ȼ����û�гɹ�</p>
-<p>��ô���ԶԹؼ��ֽ��б���</p>
-<p><a href="http://www.baidu.com֮����Ҫ����//�����򲻻�ɹ�ִ�е�����">http://www.baidu.com֮����Ҫ����//�����򲻻�ɹ�ִ�е�����</a></p>
-<p> level10<br>��������<script>alert('xss')</script></p>
-<p>�鿴��ҳԴ����</p>
-<p>����������<input>��ǩ�Ļ���Ҳ����ζ������������</p>
-<p>������һ����ǩ�ܹ���ͻ��</p>
-<p>�������?keyword=<script>alert('xss')</script>&amp;t_link=” type=”text”&amp;t_history=” type=”text”&amp;t_sort=” type=”text”</p>
-<p>��ҳ����Ӧ��������һ��<input>��ǩ��״̬���Ա��ı䡣�����ǩ������</p>
-<p>Ϊt_sort��<input>��ǩ��֮ǰ��������״̬������ͨ�����������Ӧ����ֻ</p>
-<p>���������ֵ���ı��ˡ�</p>
-<p>��˿��ԴӸñ�ǩ����ͻ�ƣ������ܲ���ע����������е�����</p>
-<p>�������´��룺?keyword=<script>alert('xss')</script>&amp;t_sort=” type=”text” ��nclick=”alert(‘xss’)</p>
-<p>level11<br>�鿴��ҳԴ����</p>
-<p>���Կ�����ͬ��ʮ��һ�������صı���</p>
-<p>��ͬ���Ƕ���һ����Ϊt_ref��<input>��ǩ��</p>
-<p>��������һ�صķ��������ܲ��ܴ��⼸����ǩ����ͻ��ע����롣</p>
-<p>������룺?keyword=good job!&amp;t_link=”type=”text&amp;t_history=”type=”text&amp;t_sort=”type=”text&amp;t_ref=”type=”text</p>
-<p>ҳ��û�з�Ӧ</p>
-<p>������ҳԴ��</p>
-<p>ԭ��t_sort��Ȼ�ǽ��ܲ���ֵ�ģ����������˫���ű�������</p>
-<p>���������ֻ��������ʾ�ַ�����ȴ�޷��𵽱պϵ������ˡ�</p>
-<p>����ץ��</p>
-<p>���Կ�����ԭʼ���������ݰ��в�û��referer�������ͷ����ô���ǿ�����</p>
-<p>����������</p>
-<p>������룺referer:”type=”text” ��nclick=”alert(‘xss’)</p>
-<p> ���Կ����������ӵ�refererͷ��ֵ��������t_ref��ǩ��value����ֵ���ˡ�</p>
-<p>���������Ǵ�����ͻ��ע���������ˣ��������ɹ�������value����ֵ</p>
-<p>�У����Ž�����������Ӧ���е����������</p>
-<p>�ɹ������ˣ�˵��ͨ��refererͷ���ύ������봥����xss</p>
-<p>level12<br>�鿴��ҳ����</p>
-<p> ������t_ua����һ����ǩ</p>
-<p>burpץ��</p>
-<p>���ݰ���User-Agentͷ��ֵ��value���Ե�ֵ��ͬ</p>
-<p>��ô�����������ȱպ�ǰ���value���ԣ�Ȼ���������뿴��</p>
-<p>“type=”text” ��nclick=”alert(‘xss’)</p>
+<p>提交的参数值插入到了标签的value属性值中</p>
+<p>但是在<a>标签的href属性中却并没有出现该参数值，</p>
+<p>而是显示的 “您的链接不合法？有没有！”这样的字符串。</p>
+<p>猜测这里可能对url地址做了匹配。</p>
+<p>只有包含正常的url地址才能添加到href属性值中</p>
+<p>构造一个有正常url地址的恶意代码：?keyword=javascript:alert(‘xss’)<a target="_blank" rel="noopener" href="http://www.baidu.com/">http://www.baidu.com</a></p>
+<p> 语句虽然显示在了href属性值中，但是javascript字符被插入了_</p>
+<p>尝试大小写绕过</p>
+<p>然而并没有成功</p>
+<p>那么尝试对关键字进行编码</p>
+<p><a target="_blank" rel="noopener" href="http://www.baidu.com之间需要插入//%EF%BC%8C%E5%90%A6%E5%88%99%E4%B8%8D%E4%BC%9A%E6%88%90%E5%8A%9F%E6%89%A7%E8%A1%8C%E5%BC%B9%E7%AA%97%E3%80%82">http://www.baidu.com之间需要插入//，否则不会成功执行弹窗。</a></p>
+<p> level10<br>尝试输入<script>alert('xss')</script></p>
+<p>查看网页源代码</p>
+<p>这里有三个<input>标签的话，也就意味着是三个参数</p>
+<p>看看哪一个标签能够被突破</p>
+<p>构造语句?keyword=<script>alert('xss')</script>&amp;t_link=” type=”text”&amp;t_history=” type=”text”&amp;t_sort=” type=”text”</p>
+<p>从页面响应来看，有一个<input>标签的状态可以被改变。这个标签就是名</p>
+<p>为t_sort的<input>标签，之前都是隐藏状态，但是通过构造参数响应发现只</p>
+<p>有它里面的值被改变了。</p>
+<p>因此可以从该标签进行突破，尝试能不能注入恶意代码进行弹窗。</p>
+<p>构造如下代码：?keyword=<script>alert('xss')</script>&amp;t_sort=” type=”text” οnclick=”alert(‘xss’)</p>
+<p>level11<br>查看网页源代码</p>
+<p>可以看到如同第十关一样有隐藏的表单</p>
+<p>不同的是多了一个名为t_ref的<input>标签。</p>
+<p>尝试用上一关的方法看看能不能从这几个标签进行突破注入代码。</p>
+<p>构造代码：?keyword=good job!&amp;t_link=”type=”text&amp;t_history=”type=”text&amp;t_sort=”type=”text&amp;t_ref=”type=”text</p>
+<p>页面没有反应</p>
+<p>看看网页源码</p>
+<p>原来t_sort仍然是接受参数值的，但是里面的双引号被编码了</p>
+<p>这样浏览器只能正常显示字符但是却无法起到闭合的作用了。</p>
+<p>进行抓包</p>
+<p>可以看到在原始的请求数据包中并没有referer这个请求头，那么我们可以自</p>
+<p>己给它加上</p>
+<p>构造代码：referer:”type=”text” οnclick=”alert(‘xss’)</p>
+<p> 可以看到我们添加的referer头的值出现在了t_ref标签的value属性值中了。</p>
+<p>接下来就是从这里突破注入恶意代码了，恶意代码成功插入了value属性值</p>
+<p>中，接着将这个请求的响应放行到浏览器试试</p>
+<p>成功弹窗了，说明通过referer头来提交恶意代码触发了xss</p>
+<p>level12<br>查看网页代码</p>
+<p> 看到了t_ua这样一个标签</p>
+<p>burp抓包</p>
+<p>数据包中User-Agent头的值和value属性的值相同</p>
+<p>那么接下来尝试先闭合前面的value属性，然后构造恶意代码看看</p>
+<p>“type=”text” οnclick=”alert(‘xss’)</p>
 <p> level13</p>
-<p>�鿴ҳ�����</p>
-<p>����һ���±�ǩ</p>
-<p>ץ������</p>
-<p>���Կ���ץȡ�����ݰ���cookieͷ����ֵ�ģ��������ֵ����Ӧ����ҳ</p>
-<p>Դ���е�t_cook��ǩ�г����ˡ�</p>
-<p>������cookie��ֵ�н��й������</p>
-<p> “type=”text” ��nclick=”alert(‘xss’)</p>
+<p>查看页面代码</p>
+<p>出现一个新标签</p>
+<p>抓包测试</p>
+<p>可以看到抓取的数据包中cookie头是有值的，而且这个值在响应的网页</p>
+<p>源码中的t_cook标签中出现了。</p>
+<p>尝试在cookie的值中进行构造语句</p>
+<p> “type=”text” οnclick=”alert(‘xss’)</p>
 <p>level14<br>level15</p>
-<p> �鿴��ҳ����</p>
-<p>AngularJS��ܣ��������һ����������������һ��ҳ��</p>
-<p>�������</p>
-<p>?src=’level1.php?name=&lt;img src=1 ��nerr��r=alert(1)&gt;’</p>
-<p>��Ϊ�������ֵ����һ����ַ��������Ҫ�������š�</p>
-<p>����level1.php����һ��php�ļ���</p>
-<p>�������һ��</p>
-<p>������Ϊ���ǲ��ǵ�����ȥ����level1.php�������ں���������name��</p>
-<p>��ֵ�ġ�����е������ڷ����˸ò���ֵ�е�ַ֮�������Ӧ��������˵�</p>
-<p>html�ļ���������������˼��<br>�ɹ�����</p>
+<p> 查看网页代码</p>
+<p>AngularJS框架，发现这个一个包含，包含的是一个页面</p>
+<p>构造代码</p>
+<p>?src=’level1.php?name=&lt;img src=1 οnerrοr=alert(1)&gt;’</p>
+<p>因为这里参数值算是一个地址，所以需要添加引号。</p>
+<p>但是level1.php不是一个php文件吗？</p>
+<p>这里解释一下</p>
+<p>这是因为我们不是单纯的去包含level1.php，而是在后面添加了name参</p>
+<p>数值的。这就有点像是在访问了该参数值中地址之后把它响应在浏览器端的</p>
+<p>html文件给包含进来的意思。<br>成功弹窗</p>
 <p>level16</p>
-<p> �鿴Դ���룬��������ĵ����������һ��</p>
-<p>�ؼ���script�Լ� / �Ϳո񶼱������ͬ���Ŀո��ַ�ʵ���ˡ�</p>
-<p>����Ҳû�취ȥ�պ�ǰ��ı�ǩ�ˡ�</p>
-<p>�����ûس��������Ƿֿ���</p>
-<p>��������/����Ҳ�������ˣ�����������Ҫ����һ������Ҫ�պϵı�ǩ����</p>
-<p>��֮ǰ���ù���<img></p>
-<p>��������Ϊlevel16.php?keyword=%3Cimg%0Dsrc=x%0Donerror=alert(%27XSS%27)%3E</p>
-<p>��ʹ����%0d����ո�%0d��ʮ�����ƵĻس����ɹ����򣬽�����һ��</p>
-<p> level17<br>�鿴��ҳԴ����</p>
-<p>�����ύ������������ֵ��������<embed>��ǩ��src����ֵ��</p>
-<p>�²�ñ�ǩӦ�þ���ͻ�ƿڣ�Ȼ���û����ĵ����������</p>
-<p>ֱ���޸�Դ���иó����� a ��ǩ�е� href Ϊ��javascript:alert(1)������ɹ��ƹ�</p>
-<p>��������������������������������<br>��Ȩ����������ΪCSDN������shayebudon����ԭ�����£���ѭCC 4.0 BY-SA��ȨЭ�飬ת���븽��ԭ�ĳ������Ӽ���������<br>ԭ�����ӣ�<a target="_blank" rel="noopener" href="https://blog.csdn.net/shayebudon/article/details/121056166">https://blog.csdn.net/shayebudon/article/details/121056166</a></p>
+<p> 查看源代码，用最基本的弹窗代码测试一下</p>
+<p>关键字script以及 / 和空格都被编码成同样的空格字符实体了。</p>
+<p>这样也没办法去闭合前面的标签了。</p>
+<p>可以用回车来将它们分开。</p>
+<p>而且这里/符号也被编码了，所以我们需要的是一个不需要闭合的标签，比</p>
+<p>如之前所用过的<img></p>
+<p>构造的语句为level16.php?keyword=%3Cimg%0Dsrc=x%0Donerror=alert(%27XSS%27)%3E</p>
+<p>，使用了%0d代替空格，%0d是十六进制的回车，成功弹框，进入下一关</p>
+<p> level17<br>查看网页源代码</p>
+<p>我们提交的两个参数的值出现在了<embed>标签的src属性值中</p>
+<p>猜测该标签应该就是突破口，然后用基本的弹窗代码测试</p>
+<p>直接修改源码中该超链接 a 标签中的 href 为：javascript:alert(1)，点击成功绕过</p>
+<p>————————————————<br>版权声明：本文为CSDN博主「shayebudon」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。<br>原文链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/shayebudon/article/details/121056166">https://blog.csdn.net/shayebudon/article/details/121056166</a></p>
 
       
 
@@ -359,7 +369,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2021/11/05/xss-labs/">展开全文 >></a>
+          <a class="article-more-a" href="/2021/11/05/xss-lab/">展开全文 >></a>
         </p>
       
 
@@ -791,7 +801,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
         <ul class="search-ul">
           
             <li class="search-li">
-              <a href="http://localhost:4000/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>友情链接1</a>
+              <a href="http://www.baidu.com" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>百度一下</a>
             </li>
           
             <li class="search-li">
@@ -822,7 +832,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">很惭愧&lt;br&gt;&lt;br&gt;只做了一点微小的工作&lt;br&gt;谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">小本科一枚&lt;br&gt;&lt;br&gt;毕业于沈航，就职于苏宁&lt;br&gt;只是一个前端小开发</div>
   	  	
     	</section>
     
