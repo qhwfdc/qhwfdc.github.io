@@ -6,15 +6,59 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Archives | Hexo</title>
+  <title>upload-labs | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/index.html">
+  <meta name="description" content="第一关 js检查 查看源码    由源代码可知，允许上传的文件为.jpg|.png|.gif 我们上传一个.jpg文件">
+<meta property="og:type" content="article">
+<meta property="og:title" content="upload-labs">
+<meta property="og:url" content="http://example.com/2021/11/10/upload-labs/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="第一关 js检查 查看源码    由源代码可知，允许上传的文件为.jpg|.png|.gif 我们上传一个.jpg文件">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/d12bb80806c9493f8fdb2e4305979b6f.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/3a73a3c7079c42ffaf5f7d56dd07676f.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_11,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/cb0a6000c1f944d5b8f960091bd66874.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_19,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/bf23de312a1d463ab7a9b6681ed889e7.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_15,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/d1a2f3aca1a44a1c9cffa60fc10778d2.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/480aa23eaf66450590acf6749070f1ea.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_13,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/f5c3854741d8420383b003a50c1d364d.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/6d07e2164bcf4b9d8c2efac8098984b5.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_17,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/61f27d8a9ab1433495de5f20799d7de2.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/7945f52a5f0b4ef4a04f249f37ffe6f4.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_13,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/355150cc0492424f83a07e450f620129.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2c89f717b995471287fac108630b9df3.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_17,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/3c827786738645d5b8e072a48565d8eb.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_17,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/ade05f82f8224cd389078dcb6d0aad13.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/789b3d742e1c42938b25e13c252be75d.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_13,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/7ef16c6bd4e644e1889a8ffe19fa94f4.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_12,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/1f281188c35f454da0031ee152fe488f.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_13,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/9f5691c0893144d79801381fa80528b2.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/379a6b3f649b465686d434dbb5487225.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_15,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/f120f5f623d942ed8992822998d2516f.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_14,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2c4a85584af84a3aaec9b4d688e65bf2.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/af724bd44a354c639d884038cfa8fd15.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_19,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/8226f7e900904646b4bfbca390666a83.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_14,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/c22e325a1f2d4330b6f20fd6047c9390.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_12,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/715e6aad58f3452582c2b8be271f08e2.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/97136b9b4d9747f39d40e74d65ba6679.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_12,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/738d1f06b6d845e4b366ecdfc0b10e26.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_19,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/edb01c85c39840abaff009af08c0e9d9.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_13,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/864090942f6d4427a2e82684f57b45c3.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/e07fc23089634427a15d864828cd0c26.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_16,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/c909b4d03bba4065b18786298746fc52.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_12,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/0eecf25936f84fed99eb660abc36d154.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/834f4cbd39b043ae97e472c9be054dba.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/6bdc9e4e792c4006a470c8912f7b839a.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_13,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/b6d1a10d58424efab8b5ad78f10dce91.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_12,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/f7845f2384c844eeb5a5a25ce33bf172.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_11,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/ce82b76c9ca24e2c9a352bc6f73507de.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/4100c0ab6cef4beaa862c501e68a8119.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/285cf221592a431a99caeea66d0e9e4c.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_15,color_FFFFFF,t_70,g_se,x_16">
+<meta property="article:published_time" content="2021-11-10T07:25:22.000Z">
+<meta property="article:modified_time" content="2021-11-10T07:35:59.782Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://img-blog.csdnimg.cn/d12bb80806c9493f8fdb2e4305979b6f.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16">
   
   
     <link rel="icon" href="/favicon.png">
@@ -160,184 +204,274 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-upload-labs" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      upload-labs
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/11/10/upload-labs/" class="archive-article-date">
+
+        
+        <a href="/2021/11/10/upload-labs/" class="archive-article-date">
   	<time datetime="2021-11-10T07:25:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-11-10</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/11/10/upload-labs/">upload-labs</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>第一关 js检查</p>
+<p>查看源码</p>
+<p> <img src="https://img-blog.csdnimg.cn/d12bb80806c9493f8fdb2e4305979b6f.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
+<p>由源代码可知，允许上传的文件为.jpg|.png|.gif</p>
+<p>我们上传一个.jpg文件</p>
+ <span id="more"></span> 
 
-        <div class="article-info info-on-right">
-          
-          
+<p> <img src="https://img-blog.csdnimg.cn/3a73a3c7079c42ffaf5f7d56dd07676f.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_11,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
+<p>利用burp suite进行抓包</p>
+<p> <img src="https://img-blog.csdnimg.cn/cb0a6000c1f944d5b8f960091bd66874.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_19,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
+<p> 将jpg改为php后，放包</p>
+<p>   <img src="https://img-blog.csdnimg.cn/bf23de312a1d463ab7a9b6681ed889e7.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_15,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
+<p>上传成功。</p>
+<p> 第二关 Content-Type<br>查看源码</p>
+<p> <img src="https://img-blog.csdnimg.cn/d1a2f3aca1a44a1c9cffa60fc10778d2.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
+<p>有源码可知，发现只判断Content-Type类型，所以我们只需修改Content-Type进行绕过即可</p>
+<p>首先上传php文件，抓上传包</p>
+<p> <img src="https://img-blog.csdnimg.cn/480aa23eaf66450590acf6749070f1ea.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_13,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
+<p>  <img src="https://img-blog.csdnimg.cn/f5c3854741d8420383b003a50c1d364d.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
+<p>将箭头所指的内容改为image/jpeg或image/png或image/gif后，放包，文件即上传成功！ </p>
+<p>  <img src="https://img-blog.csdnimg.cn/6d07e2164bcf4b9d8c2efac8098984b5.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_17,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
+<p> 第三关 黑名单验证<br>查看源代码</p>
+<p> <img src="https://img-blog.csdnimg.cn/61f27d8a9ab1433495de5f20799d7de2.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
+<p> 由源码可知，本关不允许上传.asp,.aspx,.php,.jsp类型的文件</p>
+<p>我们可以通过不常见的php扩展名绕过黑名单的限制</p>
+<p>比如.phtml,.php3,.php4,.php5</p>
+<p> <img src="https://img-blog.csdnimg.cn/7945f52a5f0b4ef4a04f249f37ffe6f4.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_13,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
+<p>第四关 黑名单验证（.htaccess绕过）<br>查看源码</p>
+<p> <img src="https://img-blog.csdnimg.cn/355150cc0492424f83a07e450f620129.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
+<p>源码可知，黑名单拒绝了所有格式的文件后缀名，除了.htaccess</p>
+<p>所以此关通过.htaccess绕过进行上传</p>
+<p>首先，上传一个.htaccess文件</p>
+<p>内容为：SetHandler application/x-httpd-php</p>
+<p>文件命名为：.htaccess</p>
+<p> <img src="https://img-blog.csdnimg.cn/2c89f717b995471287fac108630b9df3.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_17,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
+<p>接下来，上传一个.jpg文件</p>
+<p>内容为：<?php
+phpinfo();
+?></p>
+<p>文件命名为：0.jpg（文件名自己定义）</p>
+<p>上传即可。</p>
+<p> <img src="https://img-blog.csdnimg.cn/3c827786738645d5b8e072a48565d8eb.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_17,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
+<p> 第五关 黑名单验证（.user.ini）</p>
+<p> <img src="https://img-blog.csdnimg.cn/ade05f82f8224cd389078dcb6d0aad13.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
+<p>这一关和上一关差不多，只不过这一关加上了对.htaccess的禁止，但是没有将后缀进行大小写统一</p>
+<p> <img src="https://img-blog.csdnimg.cn/789b3d742e1c42938b25e13c252be75d.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_13,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
+<p>我们用burp抓包将filename=”12345.php”改为filename=”12345.PHP”就可以了</p>
+<p> 第六关 空格绕过</p>
+<p> <img src="https://img-blog.csdnimg.cn/7ef16c6bd4e644e1889a8ffe19fa94f4.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_12,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
+<p>看完提示发现和源码，可以看到上面的方法都不可行</p>
+<p>这时候就需要普及一个知识：Win下xx.jpg空格和xx.jpg.两种文件是不被允许存在的，要是这样命名文件，windows系统会默认删除空格或者.</p>
+<p>在这里系统默认删除的的文件中的.</p>
+<p>所以我们用burp抓包将filename=”12345.php”改为filename=”12345.php “(12345.php空格)</p>
+<p> <img src="https://img-blog.csdnimg.cn/1f281188c35f454da0031ee152fe488f.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_13,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
+<p>第七关 点绕过 </p>
+<p>查看源码</p>
+<p>  <img src="https://img-blog.csdnimg.cn/9f5691c0893144d79801381fa80528b2.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> <img src="https://img-blog.csdnimg.cn/379a6b3f649b465686d434dbb5487225.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_15,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
+<p>分析代码，有去空格和所以黑名单，但是没有去点。</p>
+<p>我们只需要利用burp抓包加个点即可</p>
+<p> <img src="https://img-blog.csdnimg.cn/f120f5f623d942ed8992822998d2516f.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_14,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
+<p>第八关 ：：$DATA绕过<br>查看源码</p>
+<p> <img src="https://img-blog.csdnimg.cn/2c4a85584af84a3aaec9b4d688e65bf2.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
+<p>分析源码可知，之前所有的点这关都有防范</p>
+<p>NTFS文件系统包括对备用数据流的支持。这不是众所周知的功能，主要包括提供与Macintosh文件系统中的文件的兼容性。备用数据流允许文件包含多个数据流。每个文件至少有一个数据流。在Windows中，此默认数据流称为：$ DATA。</p>
+<p>本关中的黑名单没有去处后缀名中的“::$DATA”</p>
+<p>利用burp抓包，在文件后缀处加上::$DATA</p>
+<p> <img src="https://img-blog.csdnimg.cn/af724bd44a354c639d884038cfa8fd15.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_19,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
+<p> <img src="https://img-blog.csdnimg.cn/8226f7e900904646b4bfbca390666a83.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_14,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
+<p> 第九关 .空格.绕过<br> 查看提示</p>
+<p> <img src="https://img-blog.csdnimg.cn/c22e325a1f2d4330b6f20fd6047c9390.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_12,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
+<p>查看源码</p>
+<p> <img src="https://img-blog.csdnimg.cn/715e6aad58f3452582c2b8be271f08e2.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
+<p> 上传文件名后加上点+空格+点，改为12345.php. .</p>
+<p> <img src="https://img-blog.csdnimg.cn/97136b9b4d9747f39d40e74d65ba6679.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_12,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
+<p>第十关 双写文件名绕过</p>
+<p>上传文件，burp抓包 </p>
+<p> <img src="https://img-blog.csdnimg.cn/738d1f06b6d845e4b366ecdfc0b10e26.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_19,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
+<p> 将箭头处改为.phpphp</p>
+<p>   <img src="https://img-blog.csdnimg.cn/edb01c85c39840abaff009af08c0e9d9.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_13,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
+<p> 第十一关 文件路径%00截断<br> 查看源代码</p>
+<p> <img src="https://img-blog.csdnimg.cn/864090942f6d4427a2e82684f57b45c3.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
+<p>从代码中可以发现红线处，对上传的文件名进行重新拼接，使用$_GET传参<br>可以通过%00进行截断上传 </p>
+<p>上传.php文件</p>
+<p>使用burpsuite抓包</p>
+<p> <img src="https://img-blog.csdnimg.cn/e07fc23089634427a15d864828cd0c26.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_16,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
+<p> 在.php后增加%00.jpg,放包</p>
+<p> <img src="https://img-blog.csdnimg.cn/c909b4d03bba4065b18786298746fc52.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_12,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
+<p> 第十二关 文件路径0x00截断<br>查看源码</p>
+<p> <img src="https://img-blog.csdnimg.cn/0eecf25936f84fed99eb660abc36d154.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
+<p>上传文件123.jpg，buropsuite进行抓包</p>
+<p>，箭头处添加/.jpg%00放包</p>
+<p> <img src="https://img-blog.csdnimg.cn/834f4cbd39b043ae97e472c9be054dba.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
+<p> <img src="https://img-blog.csdnimg.cn/6bdc9e4e792c4006a470c8912f7b839a.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_13,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
+<p>第十三关 文件头检测<br>制作图片马</p>
+<p>将图片和一句话木马放在一个文件夹下</p>
+<p>一句话木马为：   &lt; ?php @eval($_POST[‘attack’]);?&gt;</p>
+<p>进行合成，命令如下</p>
+<p>copy 1123.jpg /b + 222.txt /a 2.jpg<br>上传图片马</p>
+<p> <img src="https://img-blog.csdnimg.cn/b6d1a10d58424efab8b5ad78f10dce91.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_12,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
+<p> 第十四关 getimagesize()检测<br>同十三关，这一关是用getimagesize函数来判断文件类型，但是还是可以用图片码绕过</p>
+<p>第十五关 exif_imagetype()检测<br>png图片webshell上传同Pass-13。<br>jpg/jpeg图片webshell上传同Pass-13。</p>
+<p>第十六关 突破二次渲染<br>上传图片马</p>
+<p> <img src="https://img-blog.csdnimg.cn/f7845f2384c844eeb5a5a25ce33bf172.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_11,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
+<p>使用burpsuite拦截</p>
+<p> <img src="https://img-blog.csdnimg.cn/ce82b76c9ca24e2c9a352bc6f73507de.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
+<p>在图片尾部插入一句话木马，密码是123</p>
+<p> <img src="https://img-blog.csdnimg.cn/4100c0ab6cef4beaa862c501e68a8119.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_20,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
+<p> 放包</p>
+<p> <img src="https://img-blog.csdnimg.cn/285cf221592a431a99caeea66d0e9e4c.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAc2hheWVidWRvbg==,size_15,color_FFFFFF,t_70,g_se,x_16" alt="img"> </p>
 
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/alipay.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/assets/img/wechat.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://example.com/2021/11/10/upload-labs/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/11/05/xss-lab/" class="archive-article-date">
-  	<time datetime="2021-11-05T11:21:06.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-11-05</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2021/11/05/xss-lab/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">xsslabs</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/11/05/xss-lab/">xsslabs</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/11/03/wwww/" class="archive-article-date">
-  	<time datetime="2021-11-03T15:58:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-11-03</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/11/03/wwww/">wwww</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/11/03/title/" class="archive-article-date">
-  	<time datetime="2021-11-03T15:40:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-11-03</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/11/03/title/">title</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/11/03/my-first-blog/" class="archive-article-date">
-  	<time datetime="2021-11-03T14:02:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-11-03</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/11/03/my-first-blog/">my-first-blog</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/11/03/hello-world/" class="archive-article-date">
-  	<time datetime="2021-11-03T12:08:26.515Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-11-03</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/11/03/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -360,8 +494,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
